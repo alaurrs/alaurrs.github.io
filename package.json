@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "ng build --base-href '/sallyvnge-portfolio/' && cp dist/sallyvnge-portfolio/browser/index.html dist/sallyvnge-portfolio/browser/404.html && npx angular-cli-ghpages --dir=dist/sallyvnge-portfolio/browser",
-    "deploy:docs": "ng build --base-href '/' && cp dist/sallyvnge-portfolio/browser/index.html dist/sallyvnge-portfolio/browser/404.html && rm -rf docs && mkdir -p docs && cp -R dist/sallyvnge-portfolio/browser/* docs/ && echo 'sallyvnge.fr' > docs/CNAME && touch docs/.nojekyll && git add docs && git commit -m 'Deploy to docs' || echo 'No changes to commit' && git push origin main"
+    "deploy:docs": "ng build --base-href '/' && cp dist/sallyvnge-portfolio/browser/index.html dist/sallyvnge-portfolio/browser/404.html && rm -rf docs && mkdir -p docs && cp -R dist/sallyvnge-portfolio/browser/* docs/ && touch docs/.nojekyll && git add docs && git commit -m 'Deploy to docs' || echo 'No changes to commit' && git push origin main"
   },
   "prettier": {
     "printWidth": 100,

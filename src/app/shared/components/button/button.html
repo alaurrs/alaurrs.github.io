@@ -1,14 +1,12 @@
 <button
   [ngClass]="[
-    'flex items-center justify-center gap-2 min-w-[84px] max-w-[480px] h-12 px-6 overflow-hidden cursor-pointer font-bold text-base leading-normal tracking-[0.015em] transition-colors duration-200',
-    variant === 'primary'
-      ? 'bg-[var(--color-primary-light)] text-white hover:bg-[var(--color-primary-hover-light)] dark:bg-[var(--color-primary-dark)] dark:text-black dark:hover:bg-[var(--color-primary-hover-dark)]'
-      : '',
-    variant === 'secondary'
-      ? 'border border-[var(--color-border-light)] text-[var(--color-text-light)] hover:bg-[var(--color-border-light)] dark:border-[var(--color-border-dark)] dark:text-[var(--color-text-dark)] dark:hover:bg-[var(--color-border-dark)]'
-      : '',
-    rounded ? 'rounded-full' : 'rounded-none'
+    'flex items-center justify-center gap-2 min-w-[84px] max-w-[480px] h-12 px-6 font-bold text-base transition-colors duration-200',
+    rounded ? 'rounded-full' : 'rounded-none',
+    variant === 'secondary' ? 'border-2' : 'border-0'
   ]"
+  [style.background-color]="variant === 'primary' ? 'var(--color-primary)' : 'transparent'"
+  [style.color]="variant === 'primary' ? 'var(--color-text-button-primary)' : 'var(--color-text-button-secondary)'"
+  [style.border-color]="variant === 'secondary' ? 'var(--color-border)' : 'transparent'"
 >
   <ng-content></ng-content>
 </button>

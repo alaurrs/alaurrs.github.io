@@ -1,0 +1,10 @@
+<button
+  (click)="toggleTheme()"
+  class="flex items-center justify-center w-10 h-10 rounded-full transition-colors
+         bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600"
+>
+  <lucide-icon [name]="themeService.isDark() ? 'sun' : 'moon'"
+               class="w-5 h-5 text-gray-800 dark:text-yellow-300 transition-transform">
+
+  </lucide-icon>
+</button>

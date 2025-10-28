@@ -18,7 +18,7 @@
   --color-primary-hover-light: #1f2937;
   --color-primary-hover-dark: #d1d5db;
 
-  --color-border-light: #e5e7eb;
+  --color-border-light: #000000;
   --color-border-dark: #374151;
 
   --color-accent-light: #2563eb;
@@ -34,14 +34,50 @@
   h1 {
     @apply font-garamond text-5xl font-bold;
   }
-  body {
-    background-color: var(--color-bg-light);
-    color: var(--color-text-light);
-    @apply font-mono transition-colors duration-300;
+
+  :root {
+    --color-bg: var(--color-bg-light);
+    --color-text: var(--color-text-light);
+    --color-text-button-primary: var(--color-text-dark);
+    --color-text-button-secondary: var(--color-text-light);
+    --color-primary: var(--color-primary-light);
+    --color-primary-hover: var(--color-primary-hover-light);
+    --color-border: var(--color-border-light);
+    --color-accent: var(--color-accent-light);
+    --color-muted: var(--color-muted-light);
   }
 
-  .dark body {
-    background-color: var(--color-bg-dark);
-    color: var(--color-text-dark);
+  .dark {
+    --color-bg: var(--color-bg-dark);
+    --color-text: var(--color-text-dark);
+    --color-text-button-primary: var(--color-text-light);
+    --color-text-button-secondary: var(--color-text-dark);
+    --color-primary: var(--color-primary-dark);
+    --color-primary-hover: var(--color-primary-hover-dark);
+    --color-border: var(--color-border-dark);
+    --color-accent: var(--color-accent-dark);
+    --color-muted: var(--color-muted-dark);
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    @apply font-mono transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  * {
+    cursor: url('/assets/cursor.png') 16 16, auto;
+  }
+  a:hover, button:hover {
+    cursor: url('/assets/cursor.png') 16 16, pointer;
+  }
+
+  .dark * {
+    cursor: url('/assets/cursor-white.png') 16 16, auto;
+  }
+  .dark a:hover, .dark button:hover {
+    cursor: url('/assets/cursor-white.png') 16 16, pointer;
   }
 }
