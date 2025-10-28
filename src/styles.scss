@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@use "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inconsolata:wght@200..900&display=swap');
+
+@theme {
+  --font-sans: "Work Sans", sans-serif;
+  --font-mono: "Inconsolata", monospace;
+  --font-garamond: "EB Garamond", serif;
+
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #0a0a0a;
+
+  --color-text-light: #0a0a0a;
+  --color-text-dark: #f9fafb;
+
+  --color-primary-light: #000000;
+  --color-primary-dark: #ffffff;
+
+  --color-primary-hover-light: #1f2937;
+  --color-primary-hover-dark: #d1d5db;
+
+  --color-border-light: #e5e7eb;
+  --color-border-dark: #374151;
+
+  --color-accent-light: #2563eb;
+  --color-accent-dark: #60a5fa;
+
+  --color-muted-light: #9ca3af;
+  --color-muted-dark: #6b7280;
+}
+@layer base {
+  html {
+    color-scheme: light dark;
+  }
+  h1 {
+    @apply font-garamond text-5xl font-bold;
+  }
+  body {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+    @apply font-mono transition-colors duration-300;
+  }
+
+  .dark body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+  }
+}
