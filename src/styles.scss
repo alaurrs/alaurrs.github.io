@@ -68,18 +68,12 @@
 
 @layer utilities {
   * {
-    cursor: url('/assets/cursor.png') 16 16, auto;
-  }
-  a:hover, button:hover {
-    cursor: url('/assets/cursor.png') 16 16, pointer;
+    cursor: none !important;
   }
 
-  .dark * {
-    cursor: url('/assets/cursor-white.png') 16 16, auto;
+  input[type="text"],
+  textarea {
+    cursor: text !important;
   }
-  .dark a:hover, .dark button:hover {
-    cursor: url('/assets/cursor-white.png') 16 16, pointer;
-  }
-
   .snap-always { scroll-snap-stop: always; }
 }

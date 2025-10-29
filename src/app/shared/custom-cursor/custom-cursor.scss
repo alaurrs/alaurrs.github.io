@@ -1,0 +1,29 @@
+.cursor {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(1);
+  background: white;
+  mix-blend-mode: difference;
+  transition: transform 0.15s ease-out;
+  z-index: 9999;
+}
+
+.cursor.clicked {
+  animation: pulse 0.25s ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
