@@ -9,12 +9,12 @@
   </button>
 
   @if (isOpen()) {
-    <div class="absolute right-0 mt-2 w-40 bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)] border border-[var(--color-border)] rounded-lg shadow-lg overflow-hidden z-50">
+    <div class="absolute right-0 mt-2 w-40 text-[var(--color-text)] bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg shadow-lg overflow-hidden z-50">
       @for (lang of languages; track lang.code) {
         <button
-          class="w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-800 flex items-center gap-2 transition-colors"
-          [class.bg-gray-100]="lang.code === current()"
-          [class.dark:bg-gray-800]="lang.code === current()"
+          class="w-full px-4 py-2 text-left text-sm hover:text-[var(--color-text-button-primary)] hover:bg-[var(--color-primary)] flex items-center gap-2 transition-colors"
+          [class.bg-[var(--color-primary)]]="lang.code === current()"
+          [class.text-[var(--color-text-button-primary)]]="lang.code === current()"
           (click)="selectLanguage(lang.code)"
         >
           <span>{{ lang.flag }}</span>
