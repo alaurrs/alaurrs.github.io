@@ -4,27 +4,35 @@
       [ngSrc]="project.image"
       width="1600"
       height="900"
-      alt="{{ project.title}}"
+      alt="{{ project.title | translate }}"
       class="absolute top-0 left-0 w-full h-full object-cover"
       loading="lazy"
     />
   </div>
 
   <div class="p-6">
-    <h3 class="text-2xl font-bold mb-2">{{ project.title }}</h3>
+    <h3 class="text-2xl font-bold mb-2">{{ project.title | translate }}</h3>
     <p class="text-[var(--color-accent)] mb-4">
-      {{ project.description }}
+      {{ project.description | translate }}
     </p>
+
+    <div>
+      @for (tag of project.tags; track tag) {
+        <span class="inline-block bg-[var(--color-primary)] text-[var(--color-text-button-primary)] px-3 py-1 rounded-full text-sm font-semibold mr-2 mb-2">
+          {{ tag }}
+        </span>
+      }
+    </div>
 
     <div class="flex flex-col md:flex-row justify-start gap-4 mt-4">
       <app-button variant="secondary" class="w-full md:w-auto">
-        <a [href]="project.demo" target="_blank" class="font-semibold hover:underline">Demo</a>
+        <a [href]="project.demo" target="_blank" class="font-semibold hover:underline">{{ 'projects.buttons.demo' | translate }}</a>
         <lucide-icon name="external-link" class="w-4 h-4"></lucide-icon>
       </app-button>
 
       <app-button variant="secondary" class="w-full md:w-auto">
         <app-icon name="github"></app-icon>
-        <a [href]="project.source" target="_blank" class="font-semibold hover:underline">View project</a>
+        <a [href]="project.source" target="_blank" class="font-semibold hover:underline">{{ 'projects.buttons.viewProject' | translate }}</a>
         <lucide-icon name="external-link" class="w-4 h-4"></lucide-icon>
       </app-button>
     </div>

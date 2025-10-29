@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "language": "한국어",
+    "toggleTheme": "테마 전환"
+  },
+  "hero": {
+    "greeting": "안녕하세요,",
+    "intro": "저는 Sallyvann입니다.",
+    "description": "깔끔하고 사용자 중심의 디지털 경험을 구축하는 데 열정을 가진 풀스택 엔지니어입니다. <span class=\"text-[var(--color-accent)]\">Angular/TS</span>, <span class=\"text-[var(--color-accent)]\">Spring Boot/Java (Kotlin)</span>로 작업하는 것을 좋아하며, 견고한 백엔드 아키텍처와 우아한 디자인을 결합합니다. 호기심이 많고 글로벌한 시각을 가진 저는 아시아와 캘리포니아 여행에서 영감을 받아 기술, 문화, 감정을 융합한 프로젝트를 만듭니다.",
+    "buttons": {
+      "resume": "이력서 보기",
+      "work": "작업 둘러보기"
+    }
+  },
+  "workExperience": {
+    "title": "경력",
+    "jobs": {
+      "ekino_france": {
+        "company": "ekino France",
+        "role": "소프트웨어 엔지니어 👨‍💻",
+        "period": "2022 - 2025",
+        "description": "• Bpifrance 온라인 플랫폼(BEL)과 French Tech Tremplin을 위한 백엔드 기능 개발, 커뮤니케이션 자동화에 중점 (Java / Kotlin / Spring Boot)\n• 이벤트 기반 이메일 알림 구현 (Kafka), French Tech Tremplin 신청 처리 지연 감소."
+      },
+      "ekino_vietnam": {
+        "company": "ekino Vietnam",
+        "role": "소프트웨어 엔지니어 👨‍💻",
+        "period": "2024",
+        "description": "• Kéolis Santé의 HR 플랫폼을 위한 정규화된 데이터베이스 스키마 설계 및 확장 가능한 직원 온보딩 워크플로우를 위한 Spring Boot 백엔드 모듈 개발."
+      },
+      "starbucks": {
+        "company": "Starbucks France",
+        "role": "커피 마스터 바리스타 ☕",
+        "period": "2019 - 2022",
+        "description": "• 커피 마스터 인증 취득.\n• 팀 회의 및 스타벅스 이벤트에서 커피 시음회 진행."
+      }
+    }
+  },
+  "projects": {
+    "title": "주요 프로젝트",
+    "items": {
+      "ai_dashboard": {
+        "title": "AI Prompt Dashboard",
+        "description": "AI 프롬프트 관리를 위해 Angular & Spring Boot로 구축된 풀스택 SaaS.",
+        "tags": ["Angular", "Spring Boot", "PostgreSQL", "Docker", "AWS"]
+      },
+      "mini_portfolio": {
+        "title": "Mini Portfolio QSB",
+        "description": "차트, API 통합 및 깔끔한 DevOps 파이프라인을 갖춘 개인 재무 추적 도구.",
+        "tags": ["Angular", "TypeScript", "Tailwind CSS", "Docker", "AWS"]
+      }
+    },
+    "buttons": {
+      "demo": "데모",
+      "viewProject": "프로젝트 보기"
+    }
+  },
+  "contact": {
+    "title": "연락하기",
+    "cta": "이메일 보내기"
+  }
+}
+

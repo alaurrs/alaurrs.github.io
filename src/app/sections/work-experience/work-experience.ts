@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import {ProjectCardComponent} from "../../shared/components/project-card/project-card.component";
+import {TranslateModule} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-work-experience',
-    imports: [
-    ],
+  imports: [
+    TranslateModule
+  ],
   templateUrl: './work-experience.html',
   styleUrl: './work-experience.scss',
 })

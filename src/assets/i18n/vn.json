@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "language": "VI",
+    "toggleTheme": "Đổi chủ đề"
+  },
+  "hero": {
+    "greeting": "Xin chào,",
+    "intro": "Tôi là Sallyvann.",
+    "description": "Một kỹ sư full-stack đam mê xây dựng các trải nghiệm kỹ thuật số sạch sẽ và tập trung vào người dùng. Tôi thích làm việc với <span class=\"text-[var(--color-accent)]\">Angular/TS</span>, <span class=\"text-[var(--color-accent)]\">Spring Boot/Java (Kotlin)</span>, kết hợp kiến trúc backend vững chắc với thiết kế thanh lịch. Tò mò và có tầm nhìn toàn cầu, tôi lấy cảm hứng từ những chuyến du lịch qua châu Á và California để tạo ra các dự án kết hợp công nghệ, văn hóa và cảm xúc.",
+    "buttons": {
+      "resume": "Xem CV của tôi",
+      "work": "Khám phá công việc"
+    }
+  },
+  "workExperience": {
+    "title": "Kinh nghiệm làm việc",
+    "jobs": {
+      "ekino_france": {
+        "company": "ekino France",
+        "role": "Kỹ sư phần mềm 👨‍💻",
+        "period": "2022 - 2025",
+        "description": "• Phát triển các tính năng backend cho nền tảng trực tuyến của Bpifrance (BEL) và French Tech Tremplin, tập trung vào tự động hóa truyền thông (Java / Kotlin / Spring Boot)\n• Triển khai thông báo email dựa trên sự kiện (Kafka), giảm độ trễ xử lý cho các ứng dụng French Tech Tremplin."
+      },
+      "ekino_vietnam": {
+        "company": "ekino Vietnam",
+        "role": "Kỹ sư phần mềm 👨‍💻",
+        "period": "2024",
+        "description": "• Thiết kế schema cơ sở dữ liệu chuẩn hóa và phát triển các module backend Spring Boot cho quy trình onboarding nhân viên có thể mở rộng trên nền tảng HR của Kéolis Santé."
+      },
+      "starbucks": {
+        "company": "Starbucks France",
+        "role": "Coffee Master Barista ☕",
+        "period": "2019 - 2022",
+        "description": "• Được chứng nhận Coffee Master.\n• Tổ chức các buổi thử cà phê trong các cuộc họp nhóm và sự kiện Starbucks."
+      }
+    }
+  },
+  "projects": {
+    "title": "Dự án nổi bật",
+    "items": {
+      "ai_dashboard": {
+        "title": "AI Prompt Dashboard",
+        "description": "Một SaaS full-stack được xây dựng với Angular & Spring Boot để quản lý AI prompts.",
+        "tags": ["Angular", "Spring Boot", "PostgreSQL", "Docker", "AWS"]
+      },
+      "mini_portfolio": {
+        "title": "Mini Portfolio QSB",
+        "description": "Công cụ theo dõi tài chính cá nhân với biểu đồ, tích hợp API và DevOps pipelines sạch sẽ.",
+        "tags": ["Angular", "TypeScript", "Tailwind CSS", "Docker", "AWS"]
+      }
+    },
+    "buttons": {
+      "demo": "Demo",
+      "viewProject": "Xem dự án"
+    }
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "cta": "GỬI EMAIL CHO TÔI"
+  }
+}
+

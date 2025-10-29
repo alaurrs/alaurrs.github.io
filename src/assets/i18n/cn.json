@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "language": "中文",
+    "toggleTheme": "切换主题"
+  },
+  "hero": {
+    "greeting": "你好，",
+    "intro": "我是 Sallyvann。",
+    "description": "一名热衷于构建简洁、以用户为中心的数字体验的全栈工程师。我喜欢使用 <span class=\"text-[var(--color-accent)]\">Angular/TS</span>、<span class=\"text-[var(--color-accent)]\">Spring Boot/Java (Kotlin)</span>，将坚实的后端架构与优雅的设计相结合。我充满好奇心且具有全球视野，从我在亚洲和加州的旅行中汲取灵感，创造融合技术、文化和情感的项目。",
+    "buttons": {
+      "resume": "查看我的简历",
+      "work": "探索我的作品"
+    }
+  },
+  "workExperience": {
+    "title": "工作经验",
+    "jobs": {
+      "ekino_france": {
+        "company": "ekino France",
+        "role": "软件工程师 👨‍💻",
+        "period": "2022 - 2025",
+        "description": "• 为 Bpifrance 在线平台（BEL）和 French Tech Tremplin 开发后端功能，专注于通信自动化（Java / Kotlin / Spring Boot）\n• 实施事件驱动的电子邮件通知（Kafka），减少 French Tech Tremplin 申请的处理延迟。"
+      },
+      "ekino_vietnam": {
+        "company": "ekino Vietnam",
+        "role": "软件工程师 👨‍💻",
+        "period": "2024",
+        "description": "• 为 Kéolis Santé 的 HR 平台设计标准化数据库架构并开发 Spring Boot 后端模块，支持可扩展的员工入职工作流程。"
+      },
+      "starbucks": {
+        "company": "Starbucks France",
+        "role": "咖啡大师 ☕",
+        "period": "2019 - 2022",
+        "description": "• 获得咖啡大师认证。\n• 在团队会议和星巴克活动中主持咖啡品鉴会。"
+      }
+    }
+  },
+  "projects": {
+    "title": "精选项目",
+    "items": {
+      "ai_dashboard": {
+        "title": "AI Prompt Dashboard",
+        "description": "使用 Angular 和 Spring Boot 构建的全栈 SaaS，用于管理 AI 提示词。",
+        "tags": ["Angular", "Spring Boot", "PostgreSQL", "Docker", "AWS"]
+      },
+      "mini_portfolio": {
+        "title": "Mini Portfolio QSB",
+        "description": "个人财务跟踪工具，包含图表、API 集成和简洁的 DevOps 管道。",
+        "tags": ["Angular", "TypeScript", "Tailwind CSS", "Docker", "AWS"]
+      }
+    },
+    "buttons": {
+      "demo": "演示",
+      "viewProject": "查看项目"
+    }
+  },
+  "contact": {
+    "title": "联系我",
+    "cta": "发送邮件给我"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "language": "FR",
+    "toggleTheme": "Changer de thème"
+  },
+  "hero": {
+    "greeting": "Salut,",
+    "intro": "Je suis Sallyvann.",
+    "description": "Ingénieur full-stack passionné par la création d'expériences numériques épurées et centrées sur l'utilisateur. J'adore travailler avec <span class=\"text-[var(--color-accent)]\">Angular/TS</span>, <span class=\"text-[var(--color-accent)]\">Spring Boot/Java (Kotlin)</span>, en combinant une architecture backend solide avec un design élégant. Curieux et ouvert sur le monde, je puise mon inspiration dans mes voyages à travers l'Asie et la Californie pour créer des projets qui allient technologie, culture et émotion.",
+    "buttons": {
+      "resume": "Voir mon CV",
+      "work": "Explorer mon travail"
+    }
+  },
+  "workExperience": {
+    "title": "Expérience professionnelle",
+    "jobs": {
+      "ekino_france": {
+        "company": "ekino France",
+        "role": "Ingénieur logiciel 👨‍💻",
+        "period": "2022 - 2025",
+        "description": "• Développement de fonctionnalités backend pour la plateforme en ligne de Bpifrance (BEL) et French Tech Tremplin, avec un focus sur l'automatisation des communications (Java / Kotlin / Spring Boot)\n• Mis en place des notifications email pilotées par événements (Kafka), réduisant les délais de traitement des candidatures French Tech Tremplin."
+      },
+      "ekino_vietnam": {
+        "company": "ekino Vietnam",
+        "role": "Ingénieur logiciel 👨‍💻",
+        "period": "2024",
+        "description": "• Conception d'un schéma de base de données normalisé et développement de modules backend Spring Boot pour des workflows d'inscription collaborateurs évolutifs sur la plateforme RH de Kéolis Santé."
+      },
+      "starbucks": {
+        "company": "Starbucks France",
+        "role": "Coffee Master Barista ☕",
+        "period": "2019 - 2022",
+        "description": "• Coffee Master certifié.\n• Animation de dégustations de café dans le cadre de réunions d'équipe et d'évènements Starbucks."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projets phares",
+    "items": {
+      "ai_dashboard": {
+        "title": "AI Prompt Dashboard",
+        "description": "Un SaaS full-stack construit avec Angular & Spring Boot pour gérer les prompts IA.",
+        "tags": ["Angular", "Spring Boot", "PostgreSQL", "Docker", "AWS"]
+      },
+      "mini_portfolio": {
+        "title": "Mini Portfolio QSB",
+        "description": "Tracker de finances personnelles avec graphiques, intégrations API et pipelines DevOps propres.",
+        "tags": ["Angular", "TypeScript", "Tailwind CSS", "Docker", "AWS"]
+      }
+    },
+    "buttons": {
+      "demo": "Démo",
+      "viewProject": "Voir le projet"
+    }
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "cta": "ENVOYEZ-MOI UN EMAIL"
+  }
+}
+

@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+
+.relative {
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

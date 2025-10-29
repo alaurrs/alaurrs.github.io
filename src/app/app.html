@@ -5,11 +5,9 @@
   [cooldownMs]="260"
   [hardTriggerPx]="60"
 >
-  <nav class="fixed flex top-0 right-0 p-4 z-50">
+  <nav class="fixed flex items-center top-0 right-0 p-4 z-50 gap-4">
     <app-theme-toggle></app-theme-toggle>
-    <button class="ml-5 mr-5">
-      <span>EN</span>
-    </button>
+    <app-lang-toggle></app-lang-toggle>
   </nav>
 
   <app-hero class="snap-start snap-always block"></app-hero>

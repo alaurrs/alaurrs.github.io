@@ -1,25 +1,20 @@
 <section id="hero" class="min-h-dvh flex flex-col justify-center px-6 md:px-20" data-section>
   <div class="max-w-4xl">
-    <p class="text-lg md:text-xl">Hi there,</p>
+    <p class="text-lg md:text-xl">{{ 'hero.greeting' | translate }}</p>
     <h1 class="text-6xl md:text-7xl font-extrabold leading-tight">
-      I'm Sallyvann.
+      {{ 'hero.intro' | translate }}
     </h1>
-    <p class="text-lg md:text-xl">
-      A full-stack engineer passionate about building clean, user-focused digital experiences.
-      I love working with <span class="text-[var(--color-accent)]">Angular/TS</span>, <span class="text-[var(--color-accent)]">Spring Boot/Java (Kotlin)</span>, combining solid backend architecture with elegant
-      design.
-      Curious and globally minded, I draw inspiration from my travels across Asia and California
-      to create projects that blend technology, culture, and emotion.
+    <p class="text-lg md:text-xl" [innerHTML]="'hero.description' | translate">
     </p>
 
     <div class="mt-8 md:mt-12 flex items-center gap-4">
       <app-button variant="primary" appScrollTo="work-experience">
         <lucide-icon name="chart-no-axes-combined" class="w-4 h-4"></lucide-icon>
-        Check my resume
+        {{ 'hero.buttons.resume' | translate }}
       </app-button>
       <app-button variant="primary" appScrollTo="projects">
         <lucide-icon name="arrow-right" class="w-4 h-4"></lucide-icon>
-        Explore my work
+        {{ 'hero.buttons.work' | translate }}
       </app-button>
     </div>
 

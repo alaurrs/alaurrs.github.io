@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {Button} from './components/button/button';
 import {ArrowRight, ChartNoAxesCombined, ExternalLink, Globe, LucideAngularModule, Moon, Sun} from 'lucide-angular';
+import {TranslateModule} from '@ngx-translate/core';
 
 
 
@@ -9,9 +10,10 @@ import {ArrowRight, ChartNoAxesCombined, ExternalLink, Globe, LucideAngularModul
   declarations: [Button],
   imports: [
     CommonModule,
-    LucideAngularModule.pick({ArrowRight, ExternalLink, Sun, Moon, ChartNoAxesCombined, Globe})
+    LucideAngularModule.pick({ArrowRight, ExternalLink, Sun, Moon, ChartNoAxesCombined, Globe}),
+    TranslateModule
 
   ],
-  exports: [Button]
+  exports: [Button, TranslateModule]
 })
 export class SharedModule { }
