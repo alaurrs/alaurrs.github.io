@@ -18,13 +18,18 @@
   <app-contact class="snap-start snap-always block"></app-contact>
 </main>
 <app-custom-cursor></app-custom-cursor>
-<app-particle-trail
-  [color]="'#7dd3fc'"
-  [colorEnd]="'#a78bfa'"
-  [emission]="6"
-  [lifeMs]="700"
-  [sizePx]="6"
+
+<app-smoke-trail
+  [colorStart]="'#FFD700'"
+  [colorEnd]="'#FF4500'"
+  [alpha]="0.35"
+  [blurFade]="0.06"
+  [emission]="5"
+  [lifeMs]="1200"
+  [baseSize]="6"
   [sizeJitter]="3"
-  [maxParticles]="400"
+  [friction]="0.975"
+  [spread]="0.25"
+  [maxParticles]="600"
   [blendMode]="'lighter'">
-</app-particle-trail>
+</app-smoke-trail>
