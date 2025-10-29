@@ -9,10 +9,12 @@ export class WheelSnapDirective implements AfterViewInit, OnDestroy {
   private sections: HTMLElement[] = [];
   private wheelHandler!: (e: WheelEvent) => void;
   private lastTriggerAt = 0;
+  private accumulatedDelta = 0;
+  private resetTimeout: any;
 
   @Input() sectionSelector = '[data-section]';
-  @Input() cooldownMs = 260;
-  @Input() hardTriggerPx = 60;
+  @Input() cooldownMs = 800;
+  @Input() hardTriggerPx = 50;
 
   constructor(el: ElementRef<HTMLElement>) {
     this.container = el.nativeElement;
@@ -28,26 +30,35 @@ export class WheelSnapDirective implements AfterViewInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.container.removeEventListener('wheel', this.wheelHandler);
+    if (this.resetTimeout) clearTimeout(this.resetTimeout);
   }
 
   private onWheel(e: WheelEvent) {
     if (!this.sections.length) return;
-
     if (this.isInsideScrollable(e)) return;
 
-    const dy = this.normalizeDeltaY(e);
-    const abs = Math.abs(dy);
-
-    const isDiscrete = e.deltaMode === 1 || e.deltaMode === 2 || abs >= this.hardTriggerPx;
-    if (!isDiscrete) return;
-
-    e.preventDefault();
-
     const now = performance.now();
-    if (now - this.lastTriggerAt < this.cooldownMs) return;
-    this.lastTriggerAt = now;
+    if (now - this.lastTriggerAt < this.cooldownMs) {
+      e.preventDefault();
+      return;
+    }
 
-    this.scrollByOne(dy > 0 ? 1 : -1);
+    const dy = this.normalizeDeltaY(e);
+    this.accumulatedDelta += dy;
+
+    if (this.resetTimeout) clearTimeout(this.resetTimeout);
+    this.resetTimeout = setTimeout(() => {
+      this.accumulatedDelta = 0;
+    }, 150);
+
+    const abs = Math.abs(this.accumulatedDelta);
+    if (abs >= this.hardTriggerPx) {
+      e.preventDefault();
+      this.lastTriggerAt = now;
+      const direction = this.accumulatedDelta > 0 ? 1 : -1;
+      this.accumulatedDelta = 0;
+      this.scrollByOne(direction);
+    }
   }
 
   private normalizeDeltaY(e: WheelEvent): number {
