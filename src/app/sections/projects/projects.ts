@@ -24,7 +24,7 @@ export class Projects {
       description: 'A full-stack SaaS built with Angular & Spring Boot for managing AI prompts.',
       tags: ['Angular', 'Spring Boot', 'PostgreSQL', 'Docker', 'AWS'],
       image: 'assets/images/ai-prompt-dashboard.png',
-      demo: 'https://github.com/sallyvnge/ai-prompt-dashboard',
+      demo: 'https://ai.sallyvnge.fr',
       source: 'https://github.com/sallyvnge/ai-prompt-dashboard'
     },
     {
@@ -32,7 +32,7 @@ export class Projects {
       description: 'Personal finance tracker with charts, API integrations, and clean DevOps pipelines.',
       tags: ['Angular', 'TypeScript', 'Tailwind CSS', 'Docker', 'AWS'],
       image: 'assets/images/qsb-mini-portfolio.png',
-      demo: 'https://github.com/qsb-mini-portfolio',
+      demo: 'https://mini-portfolio.tech',
       source: 'https://github.com/qsb-mini-portfolio'
     }
   ]
