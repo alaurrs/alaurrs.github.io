@@ -1,0 +1,63 @@
+name: Build & Deploy Angular to GitHub Pages (/docs)
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'docs/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Angular (base-href '/')
+        run: npm run build -- --configuration=production --base-href '/'
+
+      - name: Prepare /docs (copy build, 404, nojekyll, CNAME)
+        run: |
+          BUILD_DIR="dist/sallyvnge-portfolio/browser"
+          rm -rf docs
+          mkdir -p docs
+          cp -R "$BUILD_DIR/"* docs/
+          # 404 pour le routing Angular
+          cp docs/index.html docs/404.html
+          # Désactiver Jekyll
+          touch docs/.nojekyll
+          # Domaine custom
+          echo "www.sallyvnge.fr" > docs/CNAME
+
+      - name: Commit & push changes to main
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          git add docs
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "pages: deploy to /docs [skip ci]"
+            git push origin main
+          fi
