@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "language": "EN",
+    "toggleTheme": "Toggle theme"
+  },
+  "hero": {
+    "greeting": "Hi there,",
+    "intro": "I'm Sallyvann.",
+    "description": "A full-stack engineer passionate about building clean, user-focused digital experiences. I love working with <span class=\"text-[var(--color-accent)]\">Angular/TS</span>, <span class=\"text-[var(--color-accent)]\">Spring Boot/Java (Kotlin)</span>, combining solid backend architecture with elegant design. Curious and globally minded, I draw inspiration from my travels across Asia and California to create projects that blend technology, culture, and emotion.",
+    "buttons": {
+      "resume": "Check my resume",
+      "work": "Explore my work"
+    }
+  },
+  "workExperience": {
+    "title": "Work Experience",
+    "jobs": {
+      "ekino_france": {
+        "company": "ekino France",
+        "role": "Software Engineer 👨‍💻",
+        "period": "2022 - 2025",
+        "description": "• Developed backend features for Bpifrance's online platform (BEL) and French Tech Tremplin, with a focus on communication automation (Java / Kotlin / Spring Boot)\n• Implemented event-driven email notifications (Kafka), reducing processing delays for French Tech Tremplin applications."
+      },
+      "ekino_vietnam": {
+        "company": "ekino Vietnam",
+        "role": "Software Engineer 👨‍💻",
+        "period": "2024",
+        "description": "• Designed a normalized database schema and developed Spring Boot backend modules for scalable employee onboarding workflows on Kéolis Santé's HR platform."
+      },
+      "starbucks": {
+        "company": "Starbucks France",
+        "role": "Coffee Master Barista ☕",
+        "period": "2019 - 2022",
+        "description": "• Certified Coffee Master.\n• Led coffee tasting sessions during team meetings and Starbucks events."
+      }
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "items": {
+      "ai_dashboard": {
+        "title": "AI Prompt Dashboard",
+        "description": "A full-stack SaaS built with Angular & Spring Boot for managing AI prompts.",
+        "tags": ["Angular", "Spring Boot", "PostgreSQL", "Docker", "AWS"]
+      },
+      "mini_portfolio": {
+        "title": "Mini Portfolio QSB",
+        "description": "Personal finance tracker with charts, API integrations, and clean DevOps pipelines.",
+        "tags": ["Angular", "TypeScript", "Tailwind CSS", "Docker", "AWS"]
+      }
+    },
+    "buttons": {
+      "demo": "Demo",
+      "viewProject": "View project"
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "cta": "SEND ME AN EMAIL"
+  }
+}
+

@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "language": "ខ្មែរ",
+    "toggleTheme": "ប្តូរធីម"
+  },
+  "hero": {
+    "greeting": "សួស្តី",
+    "intro": "ខ្ញុំឈ្មោះ Sallyvann។",
+    "description": "វិស្វករ full-stack ដែលចូលចិត្តបង្កើតបទពិសោធន៍ឌីជីថលស្អាតនិងផ្តោតលើអ្នកប្រើប្រាស់។ ខ្ញុំចូលចិត្តធ្វើការជាមួយ <span class=\"text-[var(--color-accent)]\">Angular/TS</span>, <span class=\"text-[var(--color-accent)]\">Spring Boot/Java (Kotlin)</span> ដោយរួមបញ្ចូលស្ថាបត្យកម្ម backend រឹងមាំជាមួយនឹងការរចនាប្រណីត។ ដោយសារតែមានការចាប់អារម្មណ៍និងគំនិតសកល ខ្ញុំទទួលបានការបំផុសគំនិតពីការធ្វើដំណើរកាត់អាស៊ី និងកាលីហ្វ័រញ៉ា ដើម្បីបង្កើតគម្រោងដែលរួមបញ្ចូលបច្ចេកវិទ្យា វប្បធម៌ និងអារម្មណ៍។",
+    "buttons": {
+      "resume": "មើល CV របស់ខ្ញុំ",
+      "work": "រុករកការងាររបស់ខ្ញុំ"
+    }
+  },
+  "workExperience": {
+    "title": "បទពិសោធន៍ការងារ",
+    "jobs": {
+      "ekino_france": {
+        "company": "ekino France",
+        "role": "វិស្វករកម្មវិធី 👨‍💻",
+        "period": "២០២២ - ២០២៥",
+        "description": "• អភិវឌ្ឍន៍មុខងារ backend សម្រាប់វេទិកាអនឡាញរបស់ Bpifrance (BEL) និង French Tech Tremplin ដោយផ្តោតលើស្វ័យប្រវត្តិកម្មការទំនាក់ទំនង (Java / Kotlin / Spring Boot)\n• អនុវត្តការជូនដំណឹងអ៊ីមែលដែលបើកដំណើរការដោយព្រឹត្តិការណ៍ (Kafka) កាត់បន្ថយការពន្យារពេលដំណើរការសម្រាប់ពាក្យសុំ French Tech Tremplin។"
+      },
+      "ekino_vietnam": {
+        "company": "ekino Vietnam",
+        "role": "វិស្វករកម្មវិធី 👨‍💻",
+        "period": "២០២៤",
+        "description": "• រចនាគ្រោងការណ៍មូលដ្ឋានទិន្នន័យស្តង់ដារ និងអភិវឌ្ឍន៍ម៉ូឌុល backend Spring Boot សម្រាប់លំហូរការងារចុះឈ្មោះបុគ្គលិកដែលអាចពង្រីកបានលើវេទិកា HR របស់ Kéolis Santé។"
+      },
+      "starbucks": {
+        "company": "Starbucks France",
+        "role": "Coffee Master Barista ☕",
+        "period": "២០១៩ - ២០២២",
+        "description": "• បានទទួលវិញ្ញាបនប័ត្រ Coffee Master។\n• នាំការភ្លក់កាហ្វេក្នុងអំឡុងពេលប្រជុំក្រុមនិងព្រឹត្តិការណ៍ Starbucks។"
+      }
+    }
+  },
+  "projects": {
+    "title": "គម្រោងសំខាន់ៗ",
+    "items": {
+      "ai_dashboard": {
+        "title": "AI Prompt Dashboard",
+        "description": "SaaS full-stack ដែលបង្កើតដោយ Angular & Spring Boot សម្រាប់គ្រប់គ្រង AI prompts។",
+        "tags": ["Angular", "Spring Boot", "PostgreSQL", "Docker", "AWS"]
+      },
+      "mini_portfolio": {
+        "title": "Mini Portfolio QSB",
+        "description": "ឧបករណ៍តាមដានហិរញ្ញវត្ថុផ្ទាល់ខ្លួនជាមួយនឹងតារាង ការរួមបញ្ចូល API និង DevOps pipelines ស្អាត។",
+        "tags": ["Angular", "TypeScript", "Tailwind CSS", "Docker", "AWS"]
+      }
+    },
+    "buttons": {
+      "demo": "បង្ហាញ",
+      "viewProject": "មើលគម្រោង"
+    }
+  },
+  "contact": {
+    "title": "ទាក់ទងខ្ញុំ",
+    "cta": "ផ្ញើអ៊ីមែលមកខ្ញុំ"
+  }
+}
+
