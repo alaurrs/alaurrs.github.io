@@ -1,7 +1,18 @@
-<main>
-  <nav class="fixed top-0 right-0 p-4 z-50">
+<main
+  class="h-dvh overflow-y-auto scroll-smooth snap-y snap-mandatory overscroll-contain"
+  appWheelSnap
+  [sectionSelector]="'[data-section]'"
+  [cooldownMs]="260"
+  [hardTriggerPx]="60"
+>
+  <nav class="fixed flex top-0 right-0 p-4 z-50">
     <app-theme-toggle></app-theme-toggle>
+    <button class="ml-5 mr-5">
+      <span>EN</span>
+    </button>
   </nav>
-  <app-hero></app-hero>
-  <app-projects></app-projects>
+
+  <app-hero class="snap-start snap-always block"></app-hero>
+  <app-work-experience class="snap-start snap-always block"></app-work-experience>
+  <app-projects class="snap-start snap-always block"></app-projects>
 </main>

@@ -80,4 +80,6 @@
   .dark a:hover, .dark button:hover {
     cursor: url('/assets/cursor-white.png') 16 16, pointer;
   }
+
+  .snap-always { scroll-snap-stop: always; }
 }

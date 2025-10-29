@@ -10,8 +10,6 @@ import {ProjectCardComponent} from '../../shared/components/project-card/project
   imports: [
     SharedModule,
     LucideAngularModule,
-    IconComponent,
-    NgOptimizedImage,
     ProjectCardComponent
   ],
   templateUrl: './projects.html',
