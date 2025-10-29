@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "predeploy:root": "ng build --configuration=production --base-href '/'",
-    "deploy:root": "cp dist/sallyvnge-portfolio/browser/index.html dist/sallyvnge-portfolio/browser/404.html && npx angular-cli-ghpages --dir=dist/sallyvnge-portfolio/browser --repo=https://github.com/alaurrs/alaurrs.github.io.git --branch=main --cname=www.sallyvnge.fr --name='alaurrs' --email='sallyvann.ange@edu.esiee.fr'"
+    "predeploy": "ng build --configuration production --base-href '/'",
+    "deploy": "cp dist/sallyvnge-portfolio/browser/index.html dist/sallyvnge-portfolio/browser/404.html && rm -rf docs && mkdir -p docs && cp -R dist/sallyvnge-portfolio/browser/* docs/ && touch docs/.nojekyll && echo 'www.sallyvnge.fr' > docs/CNAME && git add docs && git commit -m 'Deploy to docs' || echo 'No changes to commit' && git push origin main"
   },
   "prettier": {
     "printWidth": 100,
